@@ -6,14 +6,19 @@
 int main(int argc, char *argv[]) {
 
     int input;
-    
-    printf("input is a number :");
     scanf("%d", &input);
     
     if(input>0)
-        printf("|x|=%d \n", input);
-    else
-        printf("|x|=%d \n", -input);
-     
+    {
+    	printf("positive\n");
+	}
+    else if (input<0)
+	{
+		printf("non-positive\n");
+	} 
+	else
+	{
+		printf("zero\n");
+	}
 	return 0;
 }
